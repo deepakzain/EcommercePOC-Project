@@ -16,6 +16,7 @@ import com.ecommercepoc.pageobjects.CheckoutPage;
 import com.ecommercepoc.pageobjects.InventoryPage;
 import com.ecommercepoc.pageobjects.ItemDetailedPage;
 import com.ecommercepoc.pageobjects.loginPage;
+import com.ecommercepoc.utility.Log;
 
 /**
  * @author deepak.j
@@ -42,6 +43,7 @@ public class CheckoutOverviewPageTest extends BaseClass{
 	
 	@Test
 	public void verifyTotalPrice() {
+		Log.startTestCase("verifyTotalPrice");
 		lgnPage=new loginPage();
 		inventoryPage=lgnPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		itemDetailedPage=inventoryPage.clickOnProductItem();
@@ -51,13 +53,18 @@ public class CheckoutOverviewPageTest extends BaseClass{
 		String firstName=prop.getProperty("firstname");
 		String lastName=prop.getProperty("lastname");
 		String postalCode=prop.getProperty("postalcode");
+		Log.info("User is going to enter firstname, lastname, postal code and will click on Continue button");
 		checkoutOverviewpage=checkoutPage.ClickOnContinueBtn(firstName, lastName, postalCode);
+		
 		double unitPrice=checkoutOverviewpage.getUnitPrice();
 		double totalPrice=checkoutOverviewpage.getTotalPrice();
 		double tax=checkoutOverviewpage.getTax();
 		double totalExpectedPrice=unitPrice+tax;
 		System.out.println(unitPrice+" + "+tax+" = "+totalPrice);
+		Log.info("Verifying the unit price, tax, toal price");
 		Assert.assertEquals(totalExpectedPrice, totalPrice);
+		Log.info("User is going to click on Finish button");
 		checkoutCompletePage=checkoutOverviewpage.clickOnFinish();
+		Log.endTestCase("verifyTotalPrice is Sucess");
 	}
 }

@@ -31,15 +31,21 @@ public class loginPageTest extends BaseClass {
 	
 	@Test(groups="Smoke")
 	public void verifyLogo() {
+		Log.startTestCase("verifyLogo");
 		lgnPage=new loginPage();
 		boolean result=lgnPage.validateLoginPageLogo();
+		Log.info("Verifying if logo is displayed");
 		Assert.assertTrue(result);
+		Log.endTestCase("verifyLogo is Sucess");
 	}
 	
 	@Test(groups="Smoke")
 	public void verifyTitle() {
+		Log.startTestCase("verifyTitle");
 		String title=lgnPage.getSwagTitle();
+		Log.info("Verifying if title is displayed and correct");
 		Assert.assertEquals(title, "Swag Labs");
+		Log.endTestCase("verifyTitle is Sucess");
 	}
 	
 	@Test(dataProvider = "credentials", dataProviderClass=DataProviders.class, groups= {"Smoke","Sanity"})

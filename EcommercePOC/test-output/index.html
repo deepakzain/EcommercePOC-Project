@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\deepak.j\OneDrive - Technovert\Desktop\Auto POC\EcommercePOC\testng_all.xml</span>
+                    <span>C:\Users\deepak.j\git\EcommercePOC-Project\EcommercePOC\testng_all.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.ecommercepoc.testcases.CheckoutCompletePageTest" class="method navigator-link" hash-for-method="verifyCOnfifrmOrder">verifyCOnfifrmOrder</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">10 methods,   10 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -142,6 +128,11 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ecommercepoc.testcases.CheckoutCompletePageTest" class="method navigator-link" hash-for-method="verifyCOnfifrmOrder">verifyCOnfifrmOrder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.ecommercepoc.testcases.loginPageTest" class="method navigator-link" hash-for-method="verifyLogo">verifyLogo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -172,9 +163,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.ecommercepoc.testcases.CheckoutCompletePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -183,15 +174,10 @@
                   <a name="verifyCOnfifrmOrder">
                   </a> <!-- verifyCOnfifrmOrder -->
                   <span class="method-name">verifyCOnfifrmOrder</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Thank you for your order12!] but found [Thank you for your order!]
-	at com.ecommercepoc.testcases.CheckoutCompletePageTest.verifyCOnfifrmOrder(CheckoutCompletePageTest.java:58)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -307,7 +293,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\deepak.j\OneDrive - Technovert\Desktop\Auto POC\EcommercePOC\testng_all.xml</span>
+            <span class="header-content">C:\Users\deepak.j\git\EcommercePOC-Project\EcommercePOC\testng_all.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -405,48 +391,48 @@ data.addRows(10);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyTotalPrice')
 data.setCell(0, 2, 'com.ecommercepoc.testcases.CheckoutOverviewPageTest')
-data.setCell(0, 3, 2025);
+data.setCell(0, 3, 2036);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyCOnfifrmOrder')
-data.setCell(1, 2, 'com.ecommercepoc.testcases.CheckoutCompletePageTest')
-data.setCell(1, 3, 1891);
+data.setCell(1, 1, 'checkoutInformation')
+data.setCell(1, 2, 'com.ecommercepoc.testcases.CheckoutPageTest')
+data.setCell(1, 3, 1969);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'checkoutInformation')
-data.setCell(2, 2, 'com.ecommercepoc.testcases.CheckoutPageTest')
-data.setCell(2, 3, 1629);
+data.setCell(2, 1, 'verifyCOnfifrmOrder')
+data.setCell(2, 2, 'com.ecommercepoc.testcases.CheckoutCompletePageTest')
+data.setCell(2, 3, 1939);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'checkOutItem')
 data.setCell(3, 2, 'com.ecommercepoc.testcases.CartPageTest')
-data.setCell(3, 3, 1152);
+data.setCell(3, 3, 1196);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'addItemToCart')
 data.setCell(4, 2, 'com.ecommercepoc.testcases.ItemDetailedPageTest')
-data.setCell(4, 3, 937);
+data.setCell(4, 3, 1022);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'selectAnItem')
-data.setCell(5, 2, 'com.ecommercepoc.testcases.InventoryPageTest')
-data.setCell(5, 3, 848);
+data.setCell(5, 1, 'loginTest')
+data.setCell(5, 2, 'com.ecommercepoc.testcases.loginPageTest')
+data.setCell(5, 3, 714);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'verifyProductprsence')
+data.setCell(6, 1, 'selectAnItem')
 data.setCell(6, 2, 'com.ecommercepoc.testcases.InventoryPageTest')
-data.setCell(6, 3, 627);
+data.setCell(6, 3, 642);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'loginTest')
-data.setCell(7, 2, 'com.ecommercepoc.testcases.loginPageTest')
-data.setCell(7, 3, 609);
+data.setCell(7, 1, 'verifyProductprsence')
+data.setCell(7, 2, 'com.ecommercepoc.testcases.InventoryPageTest')
+data.setCell(7, 3, 629);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'verifyLogo')
 data.setCell(8, 2, 'com.ecommercepoc.testcases.loginPageTest')
-data.setCell(8, 3, 96);
+data.setCell(8, 3, 79);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'verifyTitle')
 data.setCell(9, 2, 'com.ecommercepoc.testcases.loginPageTest')
-data.setCell(9, 3, 16);
+data.setCell(9, 3, 12);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -533,150 +519,148 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">729 ms</span>
+                <span class="method-start">898 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkoutInformation</span>
-                <span class="method-start">3971 ms</span>
+                <span class="method-start">3514 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">5606 ms</span>
+                <span class="method-start">5489 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.ecommercepoc.testcases.CheckoutOverviewPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">5817 ms</span>
+                <span class="method-start">5671 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyTotalPrice</span>
-                <span class="method-start">7185 ms</span>
+                <span class="method-start">7620 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">9210 ms</span>
+                <span class="method-start">9657 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.ecommercepoc.testcases.loginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">10155 ms</span>
+                <span class="method-start">10535 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginTest(standard_user, secret_sauce)</span>
-                <span class="method-start">11493 ms</span>
+                <span class="method-start">11933 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">12103 ms</span>
+                <span class="method-start">12648 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">12365 ms</span>
+                <span class="method-start">12870 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLogo</span>
-                <span class="method-start">13795 ms</span>
+                <span class="method-start">14495 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">13893 ms</span>
+                <span class="method-start">14575 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">14223 ms</span>
+                <span class="method-start">14761 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyTitle</span>
-                <span class="method-start">15638 ms</span>
+                <span class="method-start">16078 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">15655 ms</span>
+                <span class="method-start">16092 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.ecommercepoc.testcases.ItemDetailedPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">15869 ms</span>
+                <span class="method-start">16303 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addItemToCart</span>
-                <span class="method-start">17371 ms</span>
+                <span class="method-start">17734 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">18309 ms</span>
+                <span class="method-start">18758 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.ecommercepoc.testcases.CartPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">18500 ms</span>
+                <span class="method-start">18955 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkOutItem</span>
-                <span class="method-start">19947 ms</span>
+                <span class="method-start">20320 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">21100 ms</span>
+                <span class="method-start">21516 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.ecommercepoc.testcases.CheckoutCompletePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">21307 ms</span>
+                <span class="method-start">21703 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">verifyCOnfifrmOrder</span>
-                <span class="method-start">23053 ms</span>
+                <span class="method-start">23235 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">25038 ms</span>
+                <span class="method-start">25174 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.ecommercepoc.testcases.InventoryPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">25229 ms</span>
+                <span class="method-start">25374 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">selectAnItem</span>
-                <span class="method-start">26898 ms</span>
+                <span class="method-start">27064 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">27747 ms</span>
+                <span class="method-start">27708 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">27934 ms</span>
+                <span class="method-start">27884 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyProductprsence</span>
-                <span class="method-start">29355 ms</span>
+                <span class="method-start">29362 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">29983 ms</span>
+                <span class="method-start">29992 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.ecommercepoc.testcases.CheckoutPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">30203 ms</span>
+                <span class="method-start">30256 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

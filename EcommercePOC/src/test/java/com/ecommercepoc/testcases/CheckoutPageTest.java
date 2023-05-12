@@ -15,6 +15,7 @@ import com.ecommercepoc.pageobjects.CheckoutPage;
 import com.ecommercepoc.pageobjects.InventoryPage;
 import com.ecommercepoc.pageobjects.ItemDetailedPage;
 import com.ecommercepoc.pageobjects.loginPage;
+import com.ecommercepoc.utility.Log;
 
 /**
  * @author deepak.j
@@ -40,6 +41,7 @@ public class CheckoutPageTest extends BaseClass {
 	
 	@Test
 	public void checkoutInformation() {
+		Log.startTestCase("checkoutInformation");
 		lgnPage=new loginPage();
 		inventoryPage=lgnPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		itemDetailedPage=inventoryPage.clickOnProductItem();
@@ -51,6 +53,7 @@ public class CheckoutPageTest extends BaseClass {
 		String postalCode=prop.getProperty("postalcode");
 		checkoutOverviewpage=checkoutPage.ClickOnContinueBtn(firstName, lastName, postalCode);
 		Assert.assertEquals(checkoutOverviewpage.getCurrentUrl(), "https://www.saucedemo.com/checkout-step-two.html");
+		Log.endTestCase("checkoutInformation is Sucess");
 	}
 	
 }
