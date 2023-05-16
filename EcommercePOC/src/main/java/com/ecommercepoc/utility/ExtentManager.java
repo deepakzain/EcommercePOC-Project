@@ -15,12 +15,12 @@ public class ExtentManager {
 		
 		htmlReporter= new ExtentHtmlReporter(System.getProperty("user.dir")+"/test-output/ExtentReport/"+"MyReport.html");
 		htmlReporter.config().setDocumentTitle("My Ecommerce Automation Report");
-		
-		
 		htmlReporter.loadXMLConfig(System.getProperty("user.dir")+"/extent-config.xml");
+		
+		
 		extent = new ExtentReports();
 		extent.attachReporter(htmlReporter);
-		extent.setSystemInfo("HostName", "MyHost");
+		extent.setSystemInfo("HostName", "MyEcommerceHost");
 		extent.setSystemInfo("ProjectName", "EcommercePOC-Project");
 		extent.setSystemInfo("Tester", "Deepak");
 		extent.setSystemInfo("OS", "Win11");
