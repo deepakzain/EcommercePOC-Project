@@ -12,7 +12,11 @@ public class ExtentManager {
 	public static ExtentTest test;
 	
 	public static void setExtent() {
+		
 		htmlReporter= new ExtentHtmlReporter(System.getProperty("user.dir")+"/test-output/ExtentReport/"+"MyReport.html");
+		htmlReporter.config().setDocumentTitle("My Ecommerce Automation Report");
+		
+		
 		htmlReporter.loadXMLConfig(System.getProperty("user.dir")+"/extent-config.xml");
 		extent = new ExtentReports();
 		extent.attachReporter(htmlReporter);
