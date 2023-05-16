@@ -6,15 +6,15 @@
   </listeners>
   <test thread-count="5" name="Test_All(failed)">
     <classes>
-      <class name="com.ecommercepoc.testcases.CheckoutPageTest">
+      <class name="com.ecommercepoc.testcases.loginPageTest">
         <methods>
+          <include name="tearDown"/>
           <include name="afterSuite"/>
           <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="checkoutInformation"/>
+          <include name="loginTest" invocation-numbers="0"/>
           <include name="loadConfig"/>
         </methods>
-      </class> <!-- com.ecommercepoc.testcases.CheckoutPageTest -->
+      </class> <!-- com.ecommercepoc.testcases.loginPageTest -->
     </classes>
   </test> <!-- Test_All(failed) -->
 </suite> <!-- Failed suite [Suite] -->
