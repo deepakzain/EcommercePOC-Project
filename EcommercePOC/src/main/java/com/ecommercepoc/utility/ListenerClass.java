@@ -18,8 +18,6 @@ import com.ecommercepoc.base.BaseClass;
  * @author deepak.j
  *
  */
-
-
 public class ListenerClass extends ExtentManager implements ITestListener {
 
 	Action action= new Action();

@@ -21,9 +21,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.log4j.xml.DOMConfigurator;
 
 public class BaseClass {
-	public static Properties prop;
-//	public static WebDriver driver;
-	
+	public static Properties prop;	
 	public static ThreadLocal<RemoteWebDriver> driver=new ThreadLocal<>();	
 	
 	@BeforeSuite(groups = {"Smoke","Sanity","Regression"})
@@ -55,19 +53,16 @@ public class BaseClass {
 		
 		if(browserName.contains("Chrome")) {
 			driver.set(new ChromeDriver());
-//			driver=new ChromeDriver();
 		}else if(browserName.contains("FireFox")) {
 			driver.set(new FirefoxDriver());
 //			driver=new FirefoxDriver();
 		}else if(browserName.contains("IE")) {
 			driver.set(new InternetExplorerDriver());
-//			driver=new InternetExplorerDriver();
 		}
 		Action.implicitWait(getDriver(), 10);
 		Action.pageLoadTimeOut(getDriver(), 20);
 		
 		getDriver().get(prop.getProperty("url"));
-//		driver.get(prop.getProperty("url"));
 	}
 	@AfterSuite
 	public void afterSuite() {

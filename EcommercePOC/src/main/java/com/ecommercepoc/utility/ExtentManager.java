@@ -12,14 +12,10 @@ public class ExtentManager {
 	public static ExtentTest test;
 	
 	public static void setExtent() {
-		//htmlReporter= new ExtentHtmlReporter(System.getProperty("user.dir")+"/test-output/ExtentReport/"+"MyReport_"+BaseClass.getCurrentTime()+".html");
 		htmlReporter= new ExtentHtmlReporter(System.getProperty("user.dir")+"/test-output/ExtentReport/"+"MyReport.html");
 		htmlReporter.loadXMLConfig(System.getProperty("user.dir")+"/extent-config.xml");
-		
-		
 		extent = new ExtentReports();
 		extent.attachReporter(htmlReporter);
-		
 		extent.setSystemInfo("HostName", "MyHost");
 		extent.setSystemInfo("ProjectName", "EcommercePOC-Project");
 		extent.setSystemInfo("Tester", "Deepak");
