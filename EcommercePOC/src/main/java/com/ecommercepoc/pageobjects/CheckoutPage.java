@@ -41,26 +41,11 @@ public class CheckoutPage extends BaseClass {
 		Action.click(getDriver(), continueBtn);
 		return new CheckoutOverviewPage();
 	}
-//	
-//	public void AddFirstName(String fname) {
-//		Action.type(firstName, fname);
-//	}
-//	public void AddlastName(String lname) {
-//		Action.type(lastName, lname);
-//	}
-//	public void AddPostalCode(String pcode) {
-//		Action.type(postalCode, pcode);
-//	}
-	
+
 	public CartPage ClickOnCancelBtn() {
 		Action.click(getDriver(), cancelBtn);
 		return new CartPage();
 	}
-	
-//	public CheckoutOverviewPage ClickonContinueBtn() {
-//		Action.click(driver, continueBtn);
-//		return new CheckoutOverviewPage();
-//	}
 	
 	public String getCurrentUrl() {
 		String checkoutPageURL=getDriver().getCurrentUrl();
