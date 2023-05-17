@@ -6,42 +6,12 @@
   </listeners>
   <test thread-count="5" name="Test_All(failed)">
     <classes>
-      <class name="com.ecommercepoc.testcases.CartPageTest">
-        <methods>
-          <include name="afterSuite"/>
-          <include name="tearDown"/>
-          <include name="checkOutItem"/>
-          <include name="setup"/>
-          <include name="loadConfig"/>
-        </methods>
-      </class> <!-- com.ecommercepoc.testcases.CartPageTest -->
-      <class name="com.ecommercepoc.testcases.CheckoutOverviewPageTest">
-        <methods>
-          <include name="afterSuite"/>
-          <include name="verifyTotalPrice"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="loadConfig"/>
-        </methods>
-      </class> <!-- com.ecommercepoc.testcases.CheckoutOverviewPageTest -->
-      <class name="com.ecommercepoc.testcases.InventoryPageTest">
-        <methods>
-          <include name="afterSuite"/>
-          <include name="selectAnItem"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="verifyProductprsence"/>
-          <include name="loadConfig"/>
-        </methods>
-      </class> <!-- com.ecommercepoc.testcases.InventoryPageTest -->
       <class name="com.ecommercepoc.testcases.loginPageTest">
         <methods>
           <include name="afterSuite"/>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="verifyLogo"/>
-          <include name="loginTest"/>
-          <include name="verifyTitle"/>
+          <include name="loginTest" invocation-numbers="0"/>
           <include name="loadConfig"/>
         </methods>
       </class> <!-- com.ecommercepoc.testcases.loginPageTest -->
@@ -54,15 +24,6 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.ecommercepoc.testcases.CheckoutCompletePageTest -->
-      <class name="com.ecommercepoc.testcases.ItemDetailedPageTest">
-        <methods>
-          <include name="afterSuite"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="loadConfig"/>
-          <include name="addItemToCart"/>
-        </methods>
-      </class> <!-- com.ecommercepoc.testcases.ItemDetailedPageTest -->
     </classes>
   </test> <!-- Test_All(failed) -->
 </suite> <!-- Failed suite [Suite] -->

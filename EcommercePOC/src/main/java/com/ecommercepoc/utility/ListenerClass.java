@@ -40,7 +40,7 @@ public class ListenerClass extends ExtentManager implements ITestListener {
 				
 				String imgPath = action.screenShot(BaseClass.getDriver(), result.getName());
 				test.fail("ScreenShot is Attached", MediaEntityBuilder.createScreenCaptureFromPath(imgPath).build());
-				test.addScreenCaptureFromPath(imgPath);
+//				test.addScreenCaptureFromPath(imgPath);
 				
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
