@@ -19,11 +19,9 @@
 	
 	<test name="Method Test Cases" >
     <classes>
-       <class name="com.easy.entry.AddTestCase">
+       <class name="com.ecommercepoc.testcases.CheckoutPageTest">
         <methods>
-        <exclude name="CartPageTest" />
-        <exclude name="InventoryPageTest" />
-        <exclude name="CheckoutOverviewPageTest" />
+        <exclude name="checkoutInformation" />
       </methods>
        </class>
     </classes>
