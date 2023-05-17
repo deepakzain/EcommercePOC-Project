@@ -14,7 +14,20 @@
 			<class name="com.ecommercepoc.testcases.CartPageTest" />
 			<class name="com.ecommercepoc.testcases.CheckoutCompletePageTest" />
 			<class name="com.ecommercepoc.testcases.InventoryPageTest" />
-
 		</classes>
 	</test> <!-- Test -->
+	
+	<test name="Method Test Cases" >
+    <classes>
+       <class name="com.easy.entry.AddTestCase">
+        <methods>
+        <exclude name="CartPageTest" />
+        <exclude name="InventoryPageTest" />
+        <exclude name="CheckoutOverviewPageTest" />
+      </methods>
+       </class>
+    </classes>
+  </test>
+
+
 </suite> <!-- Suite -->

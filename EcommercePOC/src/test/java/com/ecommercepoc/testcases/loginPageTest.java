@@ -8,6 +8,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 //import org.testng.asserts.Assertion;
+import org.testng.asserts.SoftAssert;
 
 import com.ecommercepoc.base.BaseClass;
 import com.ecommercepoc.dataprovider.DataProviders;
