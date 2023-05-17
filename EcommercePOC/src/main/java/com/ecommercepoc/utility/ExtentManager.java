@@ -17,7 +17,6 @@ public class ExtentManager {
 		htmlReporter.config().setDocumentTitle("My Ecommerce Automation Report");
 		htmlReporter.loadXMLConfig(System.getProperty("user.dir")+"/extent-config.xml");
 		
-		
 		extent = new ExtentReports();
 		extent.attachReporter(htmlReporter);
 		extent.setSystemInfo("HostName", "MyEcommerceHost");
