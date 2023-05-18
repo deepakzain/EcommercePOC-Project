@@ -22,7 +22,7 @@ public class ExtentManager {
 		extent.setSystemInfo("HostName", "MyEcommerceHost");
 		extent.setSystemInfo("ProjectName", "EcommercePOC-Project");
 		extent.setSystemInfo("Tester", "Deepak");
-		extent.setSystemInfo("OS", "Win11");
+		extent.setSystemInfo("OS", "Win10");
 		extent.setSystemInfo("Browser", "Chrome");
 	}
 	public static void endReport() {

@@ -31,7 +31,6 @@ public class loginPage extends BaseClass {
 		return new InventoryPage();
 	}
 	
-	
 	public boolean validateLoginPageLogo() {
 		return Action.isDisplayed(getDriver(), SwagLogo);
 	}

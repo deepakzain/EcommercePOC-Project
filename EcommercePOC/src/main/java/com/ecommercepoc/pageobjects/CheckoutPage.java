@@ -32,8 +32,7 @@ public class CheckoutPage extends BaseClass {
 	public CheckoutPage() {
 		PageFactory.initElements(getDriver(), this);
 	}
-	
-	
+		
 	public CheckoutOverviewPage ClickOnContinueBtn(String fname, String lastname, String code) {
 		Action.type(firstName, fname);
 		Action.type(lastName, lastname);

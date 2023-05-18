@@ -28,7 +28,7 @@ public class CheckoutCompletePage extends BaseClass {
 		String confirmMessage=confirmationMessage.getText();
 		return confirmMessage;
 	}	
-	
+		
 	public InventoryPage clickOnBackBtn() {
 		Action.click(getDriver(), backHomeBtn);
 		return new InventoryPage();

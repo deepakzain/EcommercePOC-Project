@@ -34,6 +34,7 @@ public class CartPage extends BaseClass{
 		Action.click(getDriver(), continueShoppingBtn);
 		return new InventoryPage();
 	}
+	
 	public String getCurrentUrl() {
 		String cartPageURL=getDriver().getCurrentUrl();
 		return cartPageURL;

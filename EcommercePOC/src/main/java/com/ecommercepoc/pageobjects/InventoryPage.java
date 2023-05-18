@@ -31,7 +31,6 @@ public class InventoryPage extends BaseClass {
 	}
 	
 	public boolean isProductAvailable() {
-//		Action.fluentWait(driver, ProductItem, 5);
 		return Action.isDisplayed(getDriver(), ProductItem);
 	}
 	

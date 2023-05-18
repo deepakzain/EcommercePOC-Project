@@ -72,6 +72,5 @@ public class CheckoutOverviewPage extends BaseClass{
 		String checkoutOverviewPageURL=getDriver().getCurrentUrl();
 		return checkoutOverviewPageURL;
 	}
-	
 
 }
