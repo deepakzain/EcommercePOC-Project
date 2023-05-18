@@ -32,7 +32,6 @@ public class NewExcelLibrary {
 			sheet = workbook.getSheetAt(0);
 			fis.close();
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -50,54 +49,6 @@ public class NewExcelLibrary {
 
 	}
 
-	public String getCellData(String sheetName, String colName, int rowNum) {
-		try {
-			if (rowNum <= 0) {
-				return "";
-			}
-
-			int index = workbook.getSheetIndex(sheetName);
-			int col_Num = -1;
-			if (index == -1) {
-				return "";
-			}
-
-			sheet = workbook.getSheetAt(index);
-			row = sheet.getRow(0);
-			for (int i = 0; i < row.getLastCellNum(); i++) {
-				if (row.getCell(i).getStringCellValue().trim().equals(colName.trim()))
-					col_Num = i;
-			}
-			if (col_Num == -1) {
-				return "";
-			}
-
-			sheet = workbook.getSheetAt(index);
-			row = sheet.getRow(rowNum - 1);
-			if (row == null) {
-				return "";
-			}
-
-			cell = row.getCell(col_Num);
-
-			if (cell == null) {
-				return "";
-			}
-
-			if (cell.getCellType().name().equals("STRING")) {
-				return cell.getStringCellValue();
-			} else if (cell.getCellType().name().equals("BLANK")) {
-				return "";
-			} else {
-				return String.valueOf(cell.getBooleanCellValue());
-			}
-
-		} catch (Exception e) {
-
-			e.printStackTrace();
-			return "row " + rowNum + " or column " + colName + " does not exist in xls";
-		}
-	}
 
 	// returns the data from a cell
 	public String getCellData(String sheetName, int colNum, int rowNum) {
@@ -170,14 +121,4 @@ public class NewExcelLibrary {
 
 	}
 
-	public int getCellRowNum(String sheetName, String colName, String cellValue) {
-
-		for (int i = 2; i <= getRowCount(sheetName); i++) {
-			if (getCellData(sheetName, colName, i).equalsIgnoreCase(cellValue)) {
-				return i;
-			}
-		}
-		return -1;
-
-	}
 }
