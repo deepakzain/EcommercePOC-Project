@@ -45,7 +45,7 @@ public class BaseClass {
 	public static WebDriver getDriver() {
 		return driver.get();
 	}
-	
+
 	public static void launchApp() {
 		WebDriverManager.chromedriver().setup();
 		String browserName=prop.getProperty("browser");
@@ -62,6 +62,7 @@ public class BaseClass {
 		
 		getDriver().get(prop.getProperty("url"));
 	}
+	
 	@AfterSuite
 	public void afterSuite() {
 		ExtentManager.endReport();
