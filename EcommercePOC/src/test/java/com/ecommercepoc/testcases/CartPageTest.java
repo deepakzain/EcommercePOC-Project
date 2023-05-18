@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.ecommercepoc.testcases;
 
 import org.testng.Assert;
