@@ -31,8 +31,7 @@ public class BaseClass {
 		try {
 			prop=new Properties();
 			System.out.println("super constructor invoked");
-			FileInputStream ip=new FileInputStream(
-					System.getProperty("user.dir")+"\\Configuration\\config.properties");
+			FileInputStream ip=new FileInputStream(System.getProperty("user.dir")+"\\Configuration\\config.properties");
 			prop.load(ip);
 			System.out.println("driver: "+driver);
 		}
@@ -55,7 +54,6 @@ public class BaseClass {
 			driver.set(new ChromeDriver());
 		}else if(browserName.contains("FireFox")) {
 			driver.set(new FirefoxDriver());
-//			driver=new FirefoxDriver();
 		}else if(browserName.contains("IE")) {
 			driver.set(new InternetExplorerDriver());
 		}

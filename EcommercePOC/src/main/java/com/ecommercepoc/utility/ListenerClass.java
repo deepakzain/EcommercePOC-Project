@@ -40,7 +40,6 @@ public class ListenerClass extends ExtentManager implements ITestListener {
 				
 				String imgPath = action.screenShot(BaseClass.getDriver(), result.getName());
 				test.fail("ScreenShot is Attached", MediaEntityBuilder.createScreenCaptureFromPath(imgPath).build());
-//				test.addScreenCaptureFromPath(imgPath);
 				
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
@@ -55,16 +54,4 @@ public class ListenerClass extends ExtentManager implements ITestListener {
 		}
 	}
 
-	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-		// TODO Auto-generated method stub
-	}
-
-	public void onStart(ITestContext context) {
-		// TODO Auto-generated method stub
-
-	}
-
-	public void onFinish(ITestContext context) {
-		// TODO Auto-generated method stub
-	}
 }
