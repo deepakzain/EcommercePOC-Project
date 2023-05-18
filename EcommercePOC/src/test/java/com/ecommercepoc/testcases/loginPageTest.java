@@ -53,8 +53,7 @@ public class loginPageTest extends BaseClass {
 	public void loginTest(String username, String password) {
 		Log.startTestCase("loginTest");
 		lgnPage = new loginPage();
-//		String username=prop.getProperty("username");
-//		String pass=prop.getProperty("password");
+
 		Log.info("User is going to entered username & password and clicked on SignIn");
 		
 		inventoryPage=lgnPage.login(username, password);
