@@ -49,7 +49,7 @@ public class loginPageTest extends BaseClass {
 		Log.endTestCase("verifyTitle is Sucess");
 	}
 	
-	@Test(dataProvider = "credentials", dataProviderClass=DataProviders.class, groups= {"Smoke","Sanity"})
+	@Test(dataProvider = "credentials", dataProviderClass=DataProviders.class, groups= {"Smoke"})
 	public void loginTest(String username, String password) {
 		Log.startTestCase("loginTest");
 		lgnPage = new loginPage();
@@ -65,7 +65,7 @@ public class loginPageTest extends BaseClass {
 		Log.endTestCase("Login is Sucess");
 	}
 	
-	@AfterMethod(groups = {"Smoke","Sanity","Regression"})
+	@AfterMethod(groups = {"Smoke"})
 	public void tearDown() {
 		getDriver().quit();
 	}

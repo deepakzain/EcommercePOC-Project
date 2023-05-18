@@ -58,38 +58,6 @@ public class Action extends BaseClass {
 		return flag;
 	}
 
-	public static boolean isSelected(WebDriver driver, WebElement ele) {
-		boolean flag = false;
-		flag = findElement(driver, ele);
-		if (flag) {
-			flag = ele.isSelected();
-			if (flag) {
-				System.out.println("The element is Selected");
-			} else {
-				System.out.println("The element is not Selected");
-			}
-		} else {
-			System.out.println("Not selected ");
-		}
-		return flag;
-	}
-
-	public static boolean isEnabled(WebDriver driver, WebElement ele) {
-		boolean flag = false;
-		flag = findElement(driver, ele);
-		if (flag) {
-			flag = ele.isEnabled();
-			if (flag) {
-				System.out.println("The element is Enabled");
-			} else {
-				System.out.println("The element is not Enabled");
-			}
-		} else {
-			System.out.println("Not Enabled ");
-		}
-		return flag;
-	}
-
 	public static boolean type(WebElement ele, String text) {
 		boolean flag = false;
 		try {
@@ -109,23 +77,6 @@ public class Action extends BaseClass {
 			}
 		}
 		return flag;
-	}
-
-	public static int getColumncount(WebElement row) {
-		List<WebElement> columns = row.findElements(By.tagName("td"));
-		int a = columns.size();
-		System.out.println(columns.size());
-		for (WebElement column : columns) {
-			System.out.print(column.getText());
-			System.out.print("|");
-		}
-		return a;
-	}
-
-	public static int getRowCount(WebElement table) {
-		List<WebElement> rows = table.findElements(By.tagName("tr"));
-		int a = rows.size() - 1;
-		return a;
 	}
 
 	public static String getTitle(WebDriver driver) {
@@ -172,9 +123,5 @@ public class Action extends BaseClass {
 		return destination;
 	}
 
-	public static String getCurrentTime() {
-		String currentDate = new SimpleDateFormat("yyyy-MM-dd-hhmmss").format(new Date());
-		return currentDate;
-	}
 
 }

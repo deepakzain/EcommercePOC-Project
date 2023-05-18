@@ -25,17 +25,17 @@ public class ItemDetailedPageTest extends BaseClass{
 	ItemDetailedPage itemDetailedPage;
 	CartPage cartPage;
 	
-	@BeforeMethod(groups = {"Smoke","Sanity","Regression"})
+	@BeforeMethod(groups = {"Smoke"})
 	public void setup() {
 		launchApp();
 	}
 	
-	@AfterMethod(groups = {"Smoke","Sanity","Regression"})
+	@AfterMethod(groups = {"Smoke"})
 	public void tearDown() {
 		getDriver().quit();
 	}
 	
-	@Test(groups={"Regression","Sanity"})
+	@Test
 	public void addItemToCart() {
 		Log.startTestCase("addItemToCart");
 		lgnPage=new loginPage();

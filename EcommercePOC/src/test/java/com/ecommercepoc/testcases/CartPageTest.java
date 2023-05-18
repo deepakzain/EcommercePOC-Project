@@ -27,12 +27,12 @@ public class CartPageTest extends BaseClass{
 	CartPage cartPage;
 	CheckoutPage checkoutPage;
 	
-	@BeforeMethod(groups = {"Smoke","Sanity","Regression"})
+	@BeforeMethod(groups = {"Smoke"})
 	public void setup() {
 		launchApp();
 	}
 	
-	@AfterMethod(groups = {"Smoke","Sanity","Regression"})
+	@AfterMethod(groups = {"Smoke"})
 	public void tearDown() {
 		getDriver().quit();
 	}

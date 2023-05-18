@@ -58,7 +58,7 @@ public class InventoryPageTest extends BaseClass{
 		Log.endTestCase("selectAnItem is Sucess");
 	}
 	
-	@AfterMethod(groups = {"Smoke","Sanity","Regression"})
+	@AfterMethod(groups = {"Smoke"})
 	public void tearDown() {
 		getDriver().quit();
 	}

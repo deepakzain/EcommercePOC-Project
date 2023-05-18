@@ -29,12 +29,12 @@ public class CheckoutPageTest extends BaseClass {
 	CheckoutPage checkoutPage;
 	CheckoutOverviewPage checkoutOverviewpage;
 	
-	@BeforeMethod(groups = {"Smoke","Sanity","Regression"})
+	@BeforeMethod(groups = {"Smoke"})
 	public void setup() {
 		launchApp();
 	}
 	
-	@AfterMethod(groups = {"Smoke","Sanity","Regression"})
+	@AfterMethod(groups = {"Smoke"})
 	public void tearDown() {
 		getDriver().quit();
 	}

@@ -24,7 +24,7 @@ public class BaseClass {
 	public static Properties prop;	
 	public static ThreadLocal<RemoteWebDriver> driver=new ThreadLocal<>();	
 	
-	@BeforeSuite(groups = {"Smoke","Sanity","Regression"})
+	@BeforeSuite(groups = {"Smoke"})
 	public void loadConfig() {
 		ExtentManager.setExtent();
 		DOMConfigurator.configure("log4j.xml");
